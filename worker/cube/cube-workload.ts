@@ -1,6 +1,6 @@
 import {IWorkload} from '../workers';
 
-export class SquareWorkload implements IWorkload<number> {
+export class CubeWorkload implements IWorkload<number> {
 
     public data: number;
 

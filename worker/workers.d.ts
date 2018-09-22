@@ -7,12 +7,11 @@ export interface IWorkerFactory {
 }
 
 export interface IPayload<T> {
-    name: string;
+    workerName: string;
     data: T;
 }
 
 export interface IWorkload<T> {
-    name: string;
     data: T;
     error?: string;
 }

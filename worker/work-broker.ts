@@ -15,7 +15,8 @@ export class WorkBroker implements IWorkBroker {
 
         const payload: IPayload<any> = $event.data;
 
-        this.workerFactory.getWorker(payload.name)
+        this.workerFactory
+            .getWorker(payload.workerName)
             .process(payload)
             .then((w: IWorkload<any>) => this.returnResults(w))
             .catch((w: IWorkload<any>) => {

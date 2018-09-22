@@ -3,10 +3,8 @@ import {SquareWorkload} from './square-workload';
 
 export class SquareWorker implements IWorker {
 
-    static jobName = 'square';
-
     public process(payload: IPayload<number>): Promise<IWorkload<number>> {
-        const result = payload.data * payload.data;
+        const result = Math.pow(payload.data, 2);
         return Promise.resolve(new SquareWorkload(result));
     }
 

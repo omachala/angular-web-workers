@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:worker": "ng run web-webworker:build-worker",
+    "build:worker": "ng run web-worker:build-worker",
     "dev:worker": "ng run web-worker:serve-worker"
   },
   "private": true,
